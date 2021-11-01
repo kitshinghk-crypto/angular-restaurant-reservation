@@ -1,0 +1,7 @@
+<div class="container">
+    <app-header title="Reservation List"></app-header>
+    <div class="container">
+        <label style="margin-right: 20px;" for="text">Restaurant: {{ reservationWithInfo.name }}</label>
+    </div>
+    <app-item-list [items]="reservationWithInfo.reservation"></app-item-list>
+</div>
