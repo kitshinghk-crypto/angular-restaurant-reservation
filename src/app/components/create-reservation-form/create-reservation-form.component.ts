@@ -77,8 +77,8 @@ export class CreateReservationFormComponent implements OnInit {
       customerName: this.customerName,
       phoneNumber: this.phoneNumber,
       numOfPeople: this.numOfPeople,
-      reservationDatetime: reservationDate,
-      createDatetime: new Date()
+      reservationDateTime: reservationDate,
+      createDateTime: new Date()
     };
 
     console.log(reservation);

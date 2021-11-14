@@ -4,6 +4,6 @@ export interface Reservation {
     numOfPeople: number;
     customerName: string;
     phoneNumber: string;
-    reservationDatetime: Date;
-    createDatetime: Date;
+    reservationDateTime: Date;
+    createDateTime: Date;
   }

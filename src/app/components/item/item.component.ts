@@ -7,8 +7,8 @@ import { Reservation } from 'src/app/Reservation';
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent implements OnInit {
-  @Input() item: Reservation = {restaurantId:0, customerName:"", phoneNumber:"", reservationDatetime: new Date(), 
-  createDatetime: new Date(), numOfPeople:1};
+  @Input() item: Reservation = {restaurantId:0, customerName:"", phoneNumber:"", reservationDateTime: new Date(), 
+  createDateTime: new Date(), numOfPeople:1};
   datestring:string = "";
   timestring:string ="";
 
@@ -16,8 +16,8 @@ export class ItemComponent implements OnInit {
 
   ngOnInit(): void {
     console.log(this.item);
-    this.datestring = (new Date(this.item.reservationDatetime)).toLocaleDateString("en-DE");
-    this.timestring = (new Date(this.item.reservationDatetime)).toLocaleTimeString("en-DE");
+    this.datestring = (new Date(this.item.reservationDateTime)).toLocaleDateString("en-DE");
+    this.timestring = (new Date(this.item.reservationDateTime)).toLocaleTimeString("en-DE");
   }
 
 }
