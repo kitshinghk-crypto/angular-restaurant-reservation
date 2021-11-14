@@ -5,6 +5,7 @@ This UI application works together with the [backend](https://github.com/kitshin
 
 ### To build the application:
 ```
+git clone https://github.com/kitshinghk-crypto/angular-restaurant-reservation.git
 docker-compose up
 ```
 ### Functionality:
